@@ -1,0 +1,71 @@
+---
+# Species name
+species: "Uca olhanensis"
+
+# Field experiment
+experiment: "Ria Formosa-summer-q1"
+
+# Number of individuals
+'n': 750
+
+# Reference carapace width in mm of an adult male
+cw: 50
+
+# Carapace length
+# cl: carapace length in mm
+# k: percentage of cw
+# ksd: stdev for k
+cl: {k: 0.70, ksd: 0.2}
+
+# Type of crab front
+# fw: BF (broad fronted) or NF (narrow fronted)
+fw: "NF"
+
+# Claw length
+# k0: proportion of carapace length (normal claw)
+# k1: proportion of carapace length in case of hypertrophied claw
+claw_length: {k0: 0.4, k1: 1.1, kmin: 0.2}
+
+# Crab size, used for indexing other morphological measures
+# - size/sex: relative size of males to the females, by stage.
+# - size/stage: relative size to adult male, by stage.
+# - min and max are the limits of a uniform distribution from which random
+#   variates are generated.
+size:
+  sex: {juvenile: {min: 0.9, max: 1.1}, pre_puberty: {min: 0.9, max: 1.1}, sub_adult: {min: 0.9, max: 1.5}, adult: {min: 1.2, max: 1.8}}
+  stage: {juvenile: {min: 0.20, max: 0.35}, pre_puberty: {min: 0.30, max: 0.50}, sub_adult: {min: 0.40, max: 0.70}, adult: {min: 0.50, max: 1.00}}
+
+demographics:
+  - {sex: "female", stage: "juvenile", prob: 23}
+  - {sex: "female", stage: "pre_puberty", prob: 30}
+  - {sex: "female", stage: "sub_adult", prob: 45}
+  - {sex: "female", stage: "adult", prob: 50}
+  - {sex: "female", stage: ~, prob: 0}
+  - {sex: "male", stage: "juvenile", prob: 27}
+  - {sex: "male", stage: "pre_puberty", prob: 30}
+  - {sex: "male", stage: "sub_adult", prob: 50}
+  - {sex: "male", stage: "adult", prob: 60}
+  - {sex: "male", stage: ~, prob: 0}
+  - {sex: ~, stage: "juvenile", prob: 0}
+  - {sex: ~, stage: "pre_puberty", prob: 0}
+  - {sex: ~, stage: "sub_adult", prob: 0}
+  - {sex: ~, stage: "adult", prob: 0}
+  - {sex: ~, stage: ~, prob: 0}
+
+handedness:
+  - {sex: "female", stage: "juvenile", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "female", stage: "pre_puberty", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "female", stage: "sub_adult", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "female", stage: "adult", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "female", stage: ~, side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "male", stage: "juvenile", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "male", stage: "pre_puberty", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "male", stage: "sub_adult", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "male", stage: "adult", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: "male", stage: ~, side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: ~, stage: "juvenile", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: ~, stage: "pre_puberty", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: ~, stage: "sub_adult", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: ~, stage: "adult", side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+  - {sex: ~, stage: ~, side: {"none": 1, "left": 0, "right": 0, "both": 0}}
+---

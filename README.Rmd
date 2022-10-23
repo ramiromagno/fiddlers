@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# fiddlers
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+`{fiddlers}` is an R data package providing a fictional data set about fiddler
+crabs in the Algarve, Portugal.
+
+This R data package provides simple demographics and a few morphometric
+variables about three fictitious species of fiddler crabs.
+
+It can be useful to teach marine biologists the fundamental principles of data
+science, such as tidying and visualisation.
+
+## Installation
+
+You can install the development version of `{fiddlers}` like so:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("ramiromagno/fiddlers")
+```
+
+## Usage
+
+This package provides two data sets: `fiddlers` and `quadrats`.
+
+```{r}
+library(fiddlers)
+
+fiddlers
+```
+
+```{r}
+quadrats
+```
